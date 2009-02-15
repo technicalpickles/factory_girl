@@ -143,6 +143,10 @@ Factory.next :email
 
 h2. Using factories
 
+factory_girl will automatically load factory definitions if you place your them in 'test/factories.rb', 'spec/factories.rb', or in individual files underneath the 'test/factories' and 'spec/factories' directories.
+
+After they have been loaded, you can use factories in your tests or specs in the following ways:
+
 <pre><code># Build and save a User instance
 Factory(:user)
 
